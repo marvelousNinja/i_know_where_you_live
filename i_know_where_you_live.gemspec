@@ -7,11 +7,11 @@ require 'i_know_where_you_live/version'
 Gem::Specification.new do |s|
   s.name        = 'i_know_where_you_live'
   s.version     = IKnowWhereYouLive::VERSION
-  s.authors     = ['TODO: Your name']
-  s.email       = ['TODO: Your email']
-  s.homepage    = 'TODO'
-  s.summary     = 'TODO: Summary of IKnowWhereYouLive.'
-  s.description = 'TODO: Description of IKnowWhereYouLive.'
+  s.authors     = ['Alexander Sologub ']
+  s.email       = ['alexsologoub@gmail.com']
+  s.homepage    = 'https://github.com/marvelousNinja/i_know_where_you_live'
+  s.summary     = 'Development and debugging tool'
+  s.description = 'Tool with various features: template/partial path highlighting, opening these files right from the browser, and more.'
 
   s.files = Dir['{app,config,db,lib}/**/*', 'MIT-LICENSE', 'Rakefile', 'README.rdoc']
 
