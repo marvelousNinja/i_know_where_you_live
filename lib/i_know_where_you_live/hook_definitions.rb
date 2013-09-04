@@ -1,5 +1,5 @@
 module IKnowWhereYouLive
-	module RenderHooks
+	module AfterRenderHooks
 		def render_template(context, options)
 			output = super
 			after_render_template(output, context, options)
