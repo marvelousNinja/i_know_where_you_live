@@ -1,4 +1,2 @@
-class ActionView::Renderer
-	include IKnowWhereYouLive::AfterRenderHooks
-	include IKnowWhereYouLive::ParsingHooks
-end
+ActionView::Renderer.send(:include, IKnowWhereYouLive::AfterRenderHooks)
+ActionView::Renderer.send(:include, IKnowWhereYouLive::ParsingHooks)
