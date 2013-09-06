@@ -1,3 +1,2 @@
-require 'i_know_where_you_live/hook_definitions'
-require 'i_know_where_you_live/hook_implementations'
-require 'i_know_where_you_live/bootstrap_hooks'
+require 'i_know_where_you_live/template_metadata'
+require 'i_know_where_you_live/bootstrap'
