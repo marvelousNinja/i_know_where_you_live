@@ -11,3 +11,4 @@
 // about supported directives.
 //
 //= require_tree .
+//= require i_know_where_you_live
