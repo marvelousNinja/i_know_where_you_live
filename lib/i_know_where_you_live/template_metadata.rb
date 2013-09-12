@@ -1,4 +1,4 @@
-require_relative 'fragment_parser'
+require_relative 'html_parser'
 
 module IKnowWhereYouLive
 	module TemplateMetadata
@@ -14,9 +14,14 @@ module IKnowWhereYouLive
 		end
 
 		def add_metadata(output, context, options, block = nil)
-			partial = options.key?(:partial)
-			fragment = partial ? send(:find_partial) : determine_template(options)
-			FragmentParser.add_metadata(output, fragment, partial)
+		  partial = options.key?(:partial)
+		  template = options.key?(:template)
+		  fragment = partial ? send(:find_partial) : determine_template(options)
+		  if (partial || template) && fragment.formats.include?(:html)
+		    HTMLParser.add_metadata(output, fragment, partial)
+		  else
+			  output
+		  end
 		end
 	end
 end

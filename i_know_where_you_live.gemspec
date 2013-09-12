@@ -15,8 +15,8 @@ Gem::Specification.new do |s|
 
   s.files = Dir['{app,config,db,lib}/**/*', 'MIT-LICENSE', 'Rakefile', 'README.rdoc']
 
-  s.add_dependency 'rails', '~> 4.0.0'
-  s.add_dependency 'nokogiri', '~> 1.6.0'
+  s.add_dependency 'rails', '>= 3.1.0'
+  s.add_dependency 'nokogiri'
 
   s.add_development_dependency 'sqlite3'
   s.add_development_dependency 'pry-nav'
